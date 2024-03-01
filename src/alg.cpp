@@ -18,12 +18,12 @@ bool checkPrime(uint64_t value) {
 }
 
 uint64_t nPrime(uint64_t n) {
-uint64_t iPer = 0;
+uint64_t iPerem = 0;
 for(uint64_t i = 2; i < UINTMAX_MAX;i++){
     if(checkPrime(i)){
-        iPer++;
+        iPerem++;
     }
-    if(n == iPer){
+    if(n == iPerem){
         return i;
     }
 }
